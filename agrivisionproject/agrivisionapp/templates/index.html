@@ -1,0 +1,41 @@
+{% extends 'navigation.html'%}
+{% load static %}
+{% block body %}
+<style>
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+</style>
+<div class="row">
+  <div class="column">
+      <img src="{% static 'images/img.jpg' %}" alt="" style="width: 100%;">
+  <h1>Learning</h1></br>
+  <p style="font-size: medium;">learn and improve every day with our best educators and 
+  boost up your preparation by participating in live polls and doubt
+  clearing sessions.</p><hr>
+</div>
+  <div class="column">
+    <img src="{% static 'images/img1.png' %}" alt="" style="width: 100%;">
+    <h1>Practice and Testing</h1></br>
+    <p style="font-size: medium;">A preparation strategy without a revision plan isn't effective.
+      Solidify your concepts by attempting regular mock tests.
+    </p></div>
+  <div class="column">
+    <img src="{% static 'images/img2.jpg' %}" alt="" style="width: 100%;">
+    <h1>Expert Lectures</h1></br>
+  <p style="font-size: medium;">Access our classes at any time of the day by getting a subscription.
+  </p>
+ </div>
+</div>
+<h1><center>for visiting the real site visit <a href="https://linktr.ee/agrivision4u_"> Here...</a></center></h1>
+  {% endblock %}
